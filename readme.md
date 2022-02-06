@@ -8,6 +8,6 @@
     - [x] Bubble Sort
     - [x] Selection Sort
     - [x] Insertion Sort
-    - [ ] Quick Sort
-    - [ ] Merge Sort
-    - [ ] Radix Sort
+    - [x] Quick Sort
+    - [x] Merge Sort
+    - [x] Radix Sort
