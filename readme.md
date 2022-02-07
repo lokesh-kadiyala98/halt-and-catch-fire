@@ -11,3 +11,6 @@
     - [x] Quick Sort
     - [x] Merge Sort
     - [x] Radix Sort
+- [ ] LinkedLists
+    - [ ] SinglyLinkedList
+    - [ ] DoublyLinkedList
