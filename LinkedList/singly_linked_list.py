@@ -18,6 +18,30 @@ class SinglyLinkedList:
             ptr = ptr.next
         ptr.next = node
 
+    def get(self, index):
+        ptr = self.head
+        
+        while index and ptr:
+            ptr = ptr.next
+            index -= 1
+        
+        if ptr:
+            return ptr.value
+        else:
+            return "ERROR: Element not found"
+
+    def set(self, index, value):
+        ptr = self.head
+
+        while index and ptr:
+            ptr = ptr.next
+            index -= 1
+
+        if ptr:
+            ptr.value = value
+        else:
+            return "ERROR: Index OutOfBounds"
+
     def remove(self, value):
         if not self.head.value:
             return
@@ -34,8 +58,8 @@ class SinglyLinkedList:
                 break
             ptr = ptr.next
 
-        # check if want to remove node is tail
         if ptr.next:
+            # check if want to remove node is tail
             if ptr.next.next == None:
                 ptr.next = None
                 return
@@ -81,4 +105,12 @@ sll.traverse()
 sll.remove(100)
 
 sll.remove(1100)
+sll.traverse()
+
+print(sll.get(0))
+print(sll.get(3))
+print(sll.get(6))
+
+sll.set(2, 40)
+sll.set(4, 10)
 sll.traverse()

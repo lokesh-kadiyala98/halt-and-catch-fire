@@ -12,5 +12,5 @@
     - [x] Merge Sort
     - [x] Radix Sort
 - [ ] LinkedLists
-    - [ ] SinglyLinkedList
+    - [x] SinglyLinkedList
     - [ ] DoublyLinkedList
