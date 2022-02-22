@@ -16,5 +16,5 @@
     - [ ] DoublyLinkedList
 - [ ] Trees :evergreen_tree:
     - [x] Binary Search Trees
-- [ ] Heaps 
-    - [] Min/Max Heap
+- [ ] Heaps
+    - [x] Min/Max Heap
