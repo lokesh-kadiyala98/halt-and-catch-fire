@@ -11,6 +11,7 @@
     - [x] Quick Sort
     - [x] Merge Sort
     - [x] Radix Sort
+    - [x] Heap Sort
 - [ ] LinkedLists
     - [x] SinglyLinkedList
     - [ ] DoublyLinkedList
