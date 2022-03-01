@@ -38,6 +38,8 @@ def post_order(root):
     stack = []
     current = root
     while True:
+        # push right and root until
+        # left vhilds exist
         while current:
             if current.right:
                 stack.append(current.right)
@@ -46,6 +48,8 @@ def post_order(root):
 
         current = stack.pop()
 
+        # if right child of a node is not processed yet
+        # process before the node
         if current.right and peek(stack) == current.right:
             right_child = stack.pop()
             stack.append(current)

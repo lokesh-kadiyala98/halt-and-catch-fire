@@ -1,6 +1,3 @@
-from platform import node
-
-
 class Node:
     def __init__(self, value, prev = None, next = None):
         self.value = value
@@ -31,12 +28,19 @@ class DoublyLinkedList:
             ptr = ptr.next
 
         if ptr.prev:
-            ptr.prev.next = None
-            ptr.prev = ptr.prev.prev
+            # tail node
+            if not ptr.next:
+                ptr.prev.next = None
+            else:
+                ptr.prev = ptr.prev.prev
 
         if ptr.next:
             ptr.next.prev = None
-            ptr = ptr.next.next
+            # head node
+            if not ptr.prev:
+                self.head = ptr.next
+            else:
+                ptr.next = ptr.next.next
 
 dll = DoublyLinkedList()
 dll.append(Node(10))
@@ -44,6 +48,5 @@ dll.append(Node(20))
 dll.append(Node(30))
 dll.append(Node(21))
 
-dll.remove(10)
 dll.remove(20)
 dll.remove(30)
